@@ -58,6 +58,30 @@ def Linear_noT():
     else: 
         print("Retry and enter one of the variables.")
 
+def Linear_NoVf(): 
+    selector = int(input("Enter 1 to solve for Vo, 2 for t, 3 for a, or 4 for d. "))
+    if (selector == 1):
+        d = float(input("Enter in the distance in terms of m. "))
+        a = float(input("Enter in the acceleration in terms of m/s^2. "))
+        t = int(input("Enter time in terms of seconds. "))
+        Vo = (d - ((1 / 2) * a * pow(t, 2))) / t
+        print(Vo)
+    elif (selector == 2): 
+        print(t)
+    elif (selector == 3):
+        d = float(input("Enter in the distance in terms of m. "))
+        Vo = float(input("Enter in initial velocity in terms of m/s. "))
+        t = int(input("Enter time in terms of seconds. "))
+        a = (d - (Vo * t)) / ((1 / 2) * pow(t, 2))
+        print(a)
+    elif (selector == 4): 
+        Vo = float(input("Enter in the initial velocity in terms of m/s. "))
+        a = float(input("Enter in the acceleration in terms of m/s^2. "))
+        t = int(input("Enter in the time in terms of seconds. "))
+        d = (Vo * t) + ((1 / 2) * a * pow(t, 2))
+        print(d)
+    else: 
+        print("Retry and enter one of the variables. ")
 
   
 Linear_noT()
