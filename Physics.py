@@ -116,7 +116,7 @@ def Linear_noA(): # This is the Linear Equation without Acceleration as a variab
     else: # In case the user input something that was not in the program
         print("Retry and enter one of the variables. ")
 
-eqSelect = int(input("Enter in a 1 for and equation without distance, 2 for without time, 3 for no final velocity or 4 for no acceleration. ")) # Equation selector based on user input
+eqSelect = int(input("Enter in a 1 for and equation without distance, 2 for without time, 3 for no final velocity, or 4 for no acceleration. ")) # Equation selector based on user input
 if (eqSelect == 1): 
     Linear_noD()
 elif (eqSelect == 2): 
