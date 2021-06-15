@@ -87,7 +87,12 @@ def Linear_NoVf():
     else: 
         print("Retry and enter one of the variables. ")
 
-  
-Linear_noT()
-Linear_noD()
-Linear_NoVf()
+eqSelect = int(input("Enter in a 1 for and equation without distance, 2 for without time, 3 for no final velocity. "))
+if (eqSelect == 1): 
+    Linear_noD()
+elif (eqSelect == 2): 
+    Linear_noT()
+elif (eqSelect == 3): 
+    Linear_NoVf()
+else: 
+    print("Retry and enter a number from 1 to 3. ") 
