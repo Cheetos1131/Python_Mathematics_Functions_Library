@@ -7,25 +7,25 @@ def Linear_noD(): # This is the Linear Equation without Distance as a variable
         a = float(input("Enter acceleration in terms of m/s^2. "))
         t = int(input("Enter total time in terms of seconds. "))
         Vf = (Vo + a) * t
-        print("The final velocity is " + str(Vf) + " m/s.")
+        print("The final velocity is " + str(Vf) + " m/s. ")
     elif (selector == 2): # Equation to solve initial velocity
         Vf = float(input("Enter the final velocity in terms of m/s. "))
         a = float(input("Enter the acceleration in terms of m/s^2. "))
         t = int(input("Enter the time in terms of seconds. "))
         Vo = -Vf + a * t 
-        print(Vo)
+        print("The initial velocity is " + str(Vo) + " m/s. ")
     elif (selector == 3): # Equation to solve acceleration
         Vf = float(input("Enter the final velocity in terms of m/s. "))
         Vo = float(input("Enter the initial velocity in terms of m/s. "))
         t = int(input("Enter time in terms of seconds. "))
         a = (Vf - Vo) / t
-        print(a)
+        print("The acceleration is " + str(a) + " m/s^2. ")
     elif (selector == 4): # Equation to solve time
         Vf = float(input("Enter the final velocity in terms of m/s. "))
         Vo = float(input("Enter the initial velocity in terms of m/s. "))
         a = float(input("Enter the acceleration in terms of m/s^2. "))
         t = (Vf - Vo) / a
-        print(t)
+        print("The time elapsed was " + str(t) + " seconds. ")
     else: # In case the user input something that was not in the program
         print("Retry and enter one of the variables.")
 
@@ -36,25 +36,25 @@ def Linear_noT(): # This is the Linear Equation without Time as a variable
         a = float(input("Enter in the acceleration in terms of m/s^2. "))
         d = float(input("Enter in the distance in terms of m. "))
         Vf = Vo + math.sqrt(2 * a * d)
-        print(Vf)
+        print("The final velocity is " + str(Vf) + " m/s. ")
     elif (selector == 2): # Equation to solve initial velocity
         Vf = float(input("Enter in the final velocity in terms of m/s. "))
         a = float(input("Enter in the acceleration in terms of m/s^2. "))
         d = float(input("Enter in the distance in terms of m. "))
         Vo = Vf - math.sqrt(2 * a * d) 
-        print(Vo)
+        print("The initial velocity is " + str(Vo) + " m/s. ")
     elif (selector == 3): # Equation to solve acceleration
         Vf = float(input("Enter in the final velocity in terms of m/s. "))
         Vo = float(input("Enter in the initial velocity in terms of m/s. "))
         d = float(input("Enter in the distance in terms of m. "))
         a = math.sqrt((pow(Vf, 2) - pow(Vo, 2)) / (2 * d)) 
-        print(a)
+        print("The acceleration is " + str(a) + " m/s^2. ")
     elif (selector == 4): # Equation to solve distance
         Vf = float(input("Enter in the final velocity in terms of m/s. "))
         Vo = float(input("Enter in the initial velocity in terms of m/s. "))
         a = float(input("Enter in the acceleration in terms of m/s^2. "))
         d = math.sqrt((pow(Vf, 2) - pow(Vo, 2)) / (2 * a)) 
-        print(d)
+        print("The distance travelled is " + str(d) + " meters. ")
     else: # In case the user input something that was not in the program
         print("Retry and enter one of the variables.")
 
@@ -65,25 +65,25 @@ def Linear_noVf(): # This is the Linear Equation without Final Velocity as a var
         a = float(input("Enter in the acceleration in terms of m/s^2. "))
         t = int(input("Enter time in terms of seconds. "))
         Vo = (d - ((1 / 2) * a * pow(t, 2))) / t
-        print(Vo)
+        print("The initial velocity is " + str(Vo) + " m/s. ")
     elif (selector == 2): # Equation to solve time
         d = float(input("Enter in the distance in terms of m. "))
         Vo = float(input("Enter in the initial velocity in terms of m/s. "))
         a = float(input("Enter in the acceleration in terms of m/s^2. "))
         t = (2*(d - Vo)) / a
-        print(t)
+        print("The time elapsed was " + str(t) + " seconds. ")
     elif (selector == 3): # Equation to solve acceleration
         d = float(input("Enter in the distance in terms of m. "))
         Vo = float(input("Enter in initial velocity in terms of m/s. "))
         t = int(input("Enter time in terms of seconds. "))
         a = (d - (Vo * t)) / ((1 / 2) * pow(t, 2))
-        print(a)
+        print("The acceleration is " + str(a) + " m/s^2. ")
     elif (selector == 4): # Equation to solve distance
         Vo = float(input("Enter in the initial velocity in terms of m/s. "))
         a = float(input("Enter in the acceleration in terms of m/s^2. "))
         t = int(input("Enter in the time in terms of seconds. "))
         d = (Vo * t) + ((1 / 2) * a * pow(t, 2))
-        print(d)
+        print("The distance travelled is " + str(d) + " meters. ")
     else: # In case the user input something that was not in the program
         print("Retry and enter one of the variables. ")
         
@@ -94,25 +94,25 @@ def Linear_noA(): # This is the Linear Equation without Acceleration as a variab
         Vf = float(input("Enter in the final velocity in terms of m/s. "))
         t = float(input("Enter in the time in terms of seconds. "))
         d = ((1 / 2) * (Vo + Vf)) * t
-        print(d)
+        print("The distance travelled is " + str(d) + " meters. ")
     elif (selector == 2): # Equation to solve initial velocity
         d = float(input("Enter in the distance in terms of m. "))
         t = float(input("Enter in the time in terms of seconds. "))
         Vf = float(input("Enter in the final velocity in terms of m/s. "))
         Vo = (2 * (d / t)) - Vf
-        print(Vo)
+        print("The initial velocity is " + str(Vo) + " m/s. ")
     elif (selector == 3): # Equation to solve final velocity
         d = float(input("Enter in the distance in terms of m. "))
         t = float(input("Enter in the time in terms of seconds. "))
         Vo = float(input("Enter in the initial velocity in terms of m/s. "))
         Vf = (2 * (d / t)) - Vo
-        print(Vf)
+        print("The final velocity is " + str(Vf) + " m/s. ")
     elif (selector == 4): # Equation to solve time
         d = float(input("Enter in the distance in terms of m. "))
         Vo = float(input("Enter in the initial velocity in terms of m/s. "))
         Vf = float(input("Enter in the final velocity in terms of m/s. "))
         t = ((2 * d) / (Vo + Vf))
-        print(t) 
+        print("The time elapsed was " + str(t) + " seconds. ") 
     else: # In case the user input something that was not in the program
         print("Retry and enter one of the variables. ")
 
