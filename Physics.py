@@ -67,6 +67,10 @@ def Linear_NoVf():
         Vo = (d - ((1 / 2) * a * pow(t, 2))) / t
         print(Vo)
     elif (selector == 2): 
+        d = float(input("Enter in the distance in terms of m. "))
+        Vo = float(input("Enter in the initial velocity in terms of m/s. "))
+        a = float(input("Enter in the acceleration in terms of m/s^2. "))
+        t = (2*(d - Vo)) / a
         print(t)
     elif (selector == 3):
         d = float(input("Enter in the distance in terms of m. "))
@@ -86,4 +90,4 @@ def Linear_NoVf():
   
 Linear_noT()
 Linear_noD()
-Linear_noVf()
+Linear_NoVf()
